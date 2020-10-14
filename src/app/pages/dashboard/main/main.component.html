@@ -1,1 +1,5 @@
-<p>main works!</p>
+<app-dashboard-header (toggle)="onToggleClick($event)"></app-dashboard-header>
+<app-dashboard-sidebar [isToggleCheck]="isCheck"></app-dashboard-sidebar>
+<section id="contentSection" [ngClass]="{'sidebarWidth' : (isCheck == true)}">
+    <router-outlet></router-outlet>
+</section>

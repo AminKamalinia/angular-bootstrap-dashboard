@@ -1,0 +1,25 @@
+<aside [ngClass]="{'sidebarWidth' : (isToggleCheck == true)}">
+    <nav>
+        <ul>
+            <li>
+                <a routerLink="default" routerLinkActive="active-link"><i class="fas fa-home"></i> Home</a>
+            </li>
+            <li>
+                <a routerLink="upload-data" routerLinkActive="active-link"><i class="fas fa-images"></i> Icons</a>
+            </li>
+            <li id="carousel">
+                <a (click)="showSubmenu('carousel')"><i class="fas fa-sliders-h"></i> Carousel <i
+                        class="fas fa-chevron-up"></i></a>
+                <ul>
+                    <li>
+                        <a routerLink="bootstrap-carousel" routerLinkActive="active-link">Bootstrap carousel</a>
+                        <a routerLink="owl-carousel" routerLinkActive="active-link">Owl carousel</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a (click)="logout()"><i class="fas fa-sign-out-alt"></i> Sign out</a>
+            </li>
+        </ul>
+    </nav>
+</aside>

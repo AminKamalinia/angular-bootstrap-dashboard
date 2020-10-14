@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+@import "./app/scss/dashboard-variables.scss";
+
+html,
+body {
+    height: 100%;
+}
+
+.card {
+    margin-bottom: 10px;
+    box-shadow: 0px 1px 5px 0px $boxshadow-color;
+    -moz-box-shadow: 0px 1px 5px 0px $boxshadow-color;
+    -webkit-box-shadow: 0px 1px 5px 0px $boxshadow-color;
+}
+
+.alert {
+    p {
+        margin-bottom: 2px !important;
+    }
+}
+
+table {
+    tbody {
+        tr {
+            td {
+                button {
+                    border: none;
+                    cursor: pointer;
+                    background-color: transparent;
+                    transition: all ease 1s;
+                    -o-transition: all ease 1s;
+                    -moz-transition: all ease 1s;
+                    -webkit-transition: all ease 1s;
+
+                    &:hover {
+                        scale: 1.5;
+                    }
+                }
+            }
+        }
+    }
+}

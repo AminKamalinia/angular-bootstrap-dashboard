@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
+  public isCheck: boolean;
+
+  constructor() {
+    this.isCheck = true;
+  }
 
   ngOnInit(): void {
   }
 
+  public onToggleClick(isCheck: boolean): void {
+    this.isCheck = isCheck;
+  }
 }
