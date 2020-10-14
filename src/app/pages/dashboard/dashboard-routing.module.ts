@@ -4,6 +4,7 @@ import { DefaultComponent } from './default/default.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
+import { BootstrapCarouselComponent, OwlCarouselComponent } from './carousel';
 
 
 
@@ -15,7 +16,9 @@ const routes: Routes = [
     component: MainComponent,
     children: [
       { path: '', redirectTo: 'default', pathMatch: 'full' },
-      { path: 'default', component: DefaultComponent }
+      { path: 'default', component: DefaultComponent },
+      { path: 'bootstrap-carousel', component: BootstrapCarouselComponent },
+      { path: 'owl-carousel', component: OwlCarouselComponent }
     ]
   }
 ];

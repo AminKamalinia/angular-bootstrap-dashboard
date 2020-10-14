@@ -1,0 +1,74 @@
+<div class="row">
+    <div class="col-sm-12">
+        <section class="card">
+            <div class="card-body">
+                <h5 class="card-title">Bootstrap carousel</h5>
+                <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="3000">
+                            <img src="assets/images/slides/angular.jpg" class="d-block w-100" alt="Angular">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Angular</h5>
+                                <p>I usually develop web applications front-end with Angular.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-interval="3000">
+                            <img src="assets/images/slides/net-core.jpg" class="d-block w-100" alt=".Net Core">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>.Net Core</h5>
+                                <p>I usually develop web applications back end with .Net Core Web API (C#).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-sm-12">
+        <section class="card">
+            <div class="card-body">
+                <h5 class="card-title">Logo carousel</h5>
+                <section class="row justify-content-center">
+                    <div class="col-md-7">
+                        <div class="row">
+                            <div id="logoCarousel" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <ng-container *ngFor="let item of logoCarouselInputList">
+                                        <div class="carousel-item" [ngClass]="{'active' : (item.Index == 0)}">
+                                            <div class="row row-cols-4">
+                                                <div class="col" *ngFor="let logoItem of item.Logos">
+                                                    <img class="img-fluid mb-3" alt="Logo"
+                                                        src="assets/images/logos/{{logoItem}}">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ng-container>
+                                </div>
+                                <a class="carousel-control-prev" href="#logoCarousel" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#logoCarousel" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </div>
+</div>

@@ -10,17 +10,20 @@ import { MainComponent } from './main/main.component';
 import { DefaultComponent } from './default/default.component';
 import { LoginComponent } from './login/login.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
+import { BootstrapCarouselComponent, OwlCarouselComponent } from './carousel';
 
 
 @NgModule({
   declarations: [
-  MainComponent,
-  DefaultComponent,
-  DashboardHeaderComponent,
-  DashboardSidebarComponent,
-  LoginComponent,
-  ForgetPasswordComponent,
-],
+    MainComponent,
+    DefaultComponent,
+    DashboardHeaderComponent,
+    DashboardSidebarComponent,
+    LoginComponent,
+    ForgetPasswordComponent,
+    BootstrapCarouselComponent,
+    OwlCarouselComponent
+  ],
   imports: [
     FormsModule,
     CommonModule,
