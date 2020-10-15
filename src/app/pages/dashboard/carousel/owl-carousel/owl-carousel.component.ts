@@ -32,7 +32,18 @@ export class OwlCarouselComponent implements AfterViewInit {
       autoplayTimeout: 3000,
       loop: true,
       margin: 10,
-      nav: true
+      nav: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
     });
 
     $('#logoCarousel').owlCarousel({
