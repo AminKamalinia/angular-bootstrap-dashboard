@@ -1,1 +1,43 @@
-<p>owl-carousel works!</p>
+<div class="row">
+    <div class="col-sm-12">
+        <section class="card">
+            <div class="card-body">
+                <h5 class="card-title">Owl carousel</h5>
+                <div id="owlCarousel" class="owl-carousel owl-theme owl-loaded owl-drag">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage">
+                            <div class="owl-item">
+                                <div class="item">
+                                    <img class="img-fluid mb-3" alt="Angular" src="assets/images/slides/angular.jpg">
+                                </div>
+                            </div>
+                            <div class="owl-item">
+                                <div class="item">
+                                    <img class="img-fluid mb-3" alt=".Net Core" src="assets/images/slides/net-core.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="col-sm-12">
+        <section class="card">
+            <div class="card-body">
+                <h5 class="card-title">Logo carousel</h5>
+                <div id="logoCarousel" class="owl-carousel owl-theme owl-loaded owl-drag">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage">
+                            <div *ngFor="let logoItem of logoList" class="owl-item">
+                                <div class="item">
+                                    <img class="img-fluid mb-3" alt="Logo" src="assets/images/logos/{{logoItem}}">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
