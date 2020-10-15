@@ -5,6 +5,7 @@ import { ForgetPasswordComponent } from './forget-password/forget-password.compo
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
 import { BootstrapCarouselComponent, OwlCarouselComponent } from './carousel';
+import { FontawesomeIconsComponent } from './fontawesome-icons/fontawesome-icons.component';
 
 
 
@@ -18,7 +19,8 @@ const routes: Routes = [
       { path: '', redirectTo: 'default', pathMatch: 'full' },
       { path: 'default', component: DefaultComponent },
       { path: 'bootstrap-carousel', component: BootstrapCarouselComponent },
-      { path: 'owl-carousel', component: OwlCarouselComponent }
+      { path: 'owl-carousel', component: OwlCarouselComponent },
+      { path: 'owl-carousel', component: FontawesomeIconsComponent }
     ]
   }
 ];
