@@ -20,7 +20,7 @@ const routes: Routes = [
       { path: 'default', component: DefaultComponent },
       { path: 'bootstrap-carousel', component: BootstrapCarouselComponent },
       { path: 'owl-carousel', component: OwlCarouselComponent },
-      { path: 'owl-carousel', component: FontawesomeIconsComponent }
+      { path: 'fontawesome-icons', component: FontawesomeIconsComponent }
     ]
   }
 ];
