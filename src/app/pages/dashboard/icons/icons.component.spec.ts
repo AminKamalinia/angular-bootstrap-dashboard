@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FontawesomeIconsComponent } from './fontawesome-icons.component';
+import { IconsComponent } from './icons.component';
 
-describe('FontawesomeIconsComponent', () => {
-  let component: FontawesomeIconsComponent;
-  let fixture: ComponentFixture<FontawesomeIconsComponent>;
+describe('IconsComponent', () => {
+  let component: IconsComponent;
+  let fixture: ComponentFixture<IconsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FontawesomeIconsComponent ]
+      declarations: [ IconsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FontawesomeIconsComponent);
+    fixture = TestBed.createComponent(IconsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

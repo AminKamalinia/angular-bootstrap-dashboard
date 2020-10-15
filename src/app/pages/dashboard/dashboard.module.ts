@@ -11,7 +11,7 @@ import { DefaultComponent } from './default/default.component';
 import { LoginComponent } from './login/login.component';
 import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 import { BootstrapCarouselComponent, OwlCarouselComponent } from './carousel';
-import { FontawesomeIconsComponent } from './fontawesome-icons/fontawesome-icons.component';
+import { IconsComponent } from './icons/icons.component';
 
 
 @NgModule({
@@ -24,7 +24,7 @@ import { FontawesomeIconsComponent } from './fontawesome-icons/fontawesome-icons
     ForgetPasswordComponent,
     BootstrapCarouselComponent,
     OwlCarouselComponent,
-    FontawesomeIconsComponent
+    IconsComponent
   ],
   imports: [
     FormsModule,
