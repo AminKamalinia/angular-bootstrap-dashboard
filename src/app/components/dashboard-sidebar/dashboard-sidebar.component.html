@@ -17,6 +17,16 @@
                     </li>
                 </ul>
             </li>
+            <li id="editors">
+                <a (click)="showSubmenu('editors')"><i class="fas fa-file-text"></i> Editors <i
+                        class="fas fa-chevron-up"></i></a>
+                <ul>
+                    <li>
+                        <a routerLink="ckeditor" routerLinkActive="active-link">CKEditor</a>
+                        <a routerLink="tinymce" routerLinkActive="active-link">TinyMCE</a>
+                    </li>
+                </ul>
+            </li>
             <li>
                 <a (click)="logout()"><i class="fas fa-sign-out-alt"></i> Sign out</a>
             </li>

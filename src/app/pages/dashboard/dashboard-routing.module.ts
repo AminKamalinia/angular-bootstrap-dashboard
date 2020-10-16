@@ -6,6 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
 import { BootstrapCarouselComponent, OwlCarouselComponent } from './carousel';
 import { IconsComponent } from './icons/icons.component';
+import { CkeditorComponent, TinymceComponent } from './editors';
 
 
 
@@ -20,7 +21,9 @@ const routes: Routes = [
       { path: 'default', component: DefaultComponent },
       { path: 'bootstrap-carousel', component: BootstrapCarouselComponent },
       { path: 'owl-carousel', component: OwlCarouselComponent },
-      { path: 'icons', component: IconsComponent }
+      { path: 'icons', component: IconsComponent },
+      { path: 'ckeditor', component: CkeditorComponent },
+      { path: 'tinymce', component: TinymceComponent }
     ]
   }
 ];
