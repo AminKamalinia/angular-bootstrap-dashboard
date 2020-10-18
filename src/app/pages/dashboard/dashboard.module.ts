@@ -3,6 +3,7 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 import { EditorModule } from '@tinymce/tinymce-angular';
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 
 import { DashboardHeaderComponent, DashboardSidebarComponent } from 'src/app/components';
@@ -34,6 +35,7 @@ import { CkeditorComponent, TinymceComponent } from './editors';
     FormsModule,
     CommonModule,
     EditorModule,
+    CKEditorModule,
     DashboardRoutingModule
   ],
   providers: [

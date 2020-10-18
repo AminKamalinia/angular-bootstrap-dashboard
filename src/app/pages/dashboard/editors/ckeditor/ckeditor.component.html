@@ -1,1 +1,12 @@
-<p>ckeditor works!</p>
+<div class="row">
+    <div class="col-sm-12">
+        <section class="card">
+            <div class="card-body">
+                <h5 class="card-title">CKEditor</h5>
+                <ckeditor [(ngModel)]="ckeditorText" [ngModelOptions]="{standalone: true}"
+                [editor]="editor" (ready)="onReady($event)">
+            </ckeditor>
+            </div>
+        </section>
+    </div>
+</div>
