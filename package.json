@@ -25,6 +25,7 @@
     "@tinymce/tinymce-angular": "^4.2.0",
     "animate.css": "^4.1.1",
     "bootstrap": "^4.5.3",
+    "chart.js": "^2.9.4",
     "jquery": "^3.5.1",
     "owl.carousel": "^2.3.4",
     "rxjs": "~6.5.5",

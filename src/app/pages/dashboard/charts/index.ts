@@ -1,0 +1,1 @@
+export * from './chart-js/chart-js.component';
