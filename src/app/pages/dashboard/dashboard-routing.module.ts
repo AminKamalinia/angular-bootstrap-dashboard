@@ -7,7 +7,7 @@ import { MainComponent } from './main/main.component';
 import { BootstrapCarouselComponent, OwlCarouselComponent } from './carousel';
 import { IconsComponent } from './icons/icons.component';
 import { CkeditorComponent, TinymceComponent } from './editors';
-import { ChartJsComponent } from './charts';
+import { ChartJsComponent, HighchartsComponent } from './charts';
 
 
 
@@ -25,7 +25,8 @@ const routes: Routes = [
       { path: 'icons', component: IconsComponent },
       { path: 'ckeditor', component: CkeditorComponent },
       { path: 'tinymce', component: TinymceComponent },
-      { path: 'chart-js', component: ChartJsComponent }
+      { path: 'chart-js', component: ChartJsComponent },
+      { path: 'highcharts', component: HighchartsComponent }
     ]
   }
 ];

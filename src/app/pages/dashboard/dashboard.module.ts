@@ -15,7 +15,7 @@ import { ForgetPasswordComponent } from './forget-password/forget-password.compo
 import { BootstrapCarouselComponent, OwlCarouselComponent } from './carousel';
 import { IconsComponent } from './icons/icons.component';
 import { CkeditorComponent, TinymceComponent } from './editors';
-import { ChartJsComponent } from './charts/chart-js/chart-js.component';
+import { ChartJsComponent, HighchartsComponent } from './charts';
 
 
 @NgModule({
@@ -31,7 +31,8 @@ import { ChartJsComponent } from './charts/chart-js/chart-js.component';
     IconsComponent,
     CkeditorComponent,
     TinymceComponent,
-    ChartJsComponent
+    ChartJsComponent,
+    HighchartsComponent
   ],
   imports: [
     FormsModule,
