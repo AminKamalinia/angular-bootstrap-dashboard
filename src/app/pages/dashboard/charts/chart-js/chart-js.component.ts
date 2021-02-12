@@ -51,6 +51,17 @@ export class ChartJsComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.lineChartInitializer();
+    this.areaChartInitializer();
+    this.barChartInitializer();
+    this.horizontalBarChartInitializer();
+    this.radarChartInitializer();
+    this.polarAreaChartInitializer();
+    this.doughnutChartInitializer();
+    this.pieChartInitializer();
+  }
+
+  private lineChartInitializer(): void {
     const lineChart = document.getElementById('lineChart');
     this.lineChart = new Chart(lineChart, {
       type: 'line',
@@ -79,7 +90,9 @@ export class ChartJsComponent implements OnInit {
       },
       options: this.optionsForTrueScales
     });
+  }
 
+  private areaChartInitializer(): void {
     const areaChart = document.getElementById('areaChart');
     this.areaChart = new Chart(areaChart, {
       type: 'line',
@@ -111,7 +124,9 @@ export class ChartJsComponent implements OnInit {
       },
       options: this.optionsForTrueScales
     });
+  }
 
+  private barChartInitializer(): void {
     const barChart = document.getElementById('barChart');
     this.barChart = new Chart(barChart, {
       type: 'bar',
@@ -140,7 +155,9 @@ export class ChartJsComponent implements OnInit {
       },
       options: this.optionsForTrueScales
     });
+  }
 
+  private horizontalBarChartInitializer(): void {
     const horizontalBarChart = document.getElementById('horizontalBarChart');
     this.horizontalBarChart = new Chart(horizontalBarChart, {
       type: 'horizontalBar',
@@ -169,7 +186,9 @@ export class ChartJsComponent implements OnInit {
       },
       options: this.optionsForTrueScales
     });
+  }
 
+  private radarChartInitializer(): void {
     const radarChart = document.getElementById('radarChart');
     this.radarChart = new Chart(radarChart, {
       type: 'radar',
@@ -201,7 +220,9 @@ export class ChartJsComponent implements OnInit {
       },
       options: this.optionsForFalseScales
     });
+  }
 
+  private polarAreaChartInitializer(): void {
     const polarAreaChart = document.getElementById('polarAreaChart');
     this.polarAreaChart = new Chart(polarAreaChart, {
       type: 'polarArea',
@@ -220,7 +241,9 @@ export class ChartJsComponent implements OnInit {
       },
       options: this.optionsForFalseScales
     });
+  }
 
+  private doughnutChartInitializer(): void {
     const doughnutChart = document.getElementById('doughnutChart');
     this.doughnutChart = new Chart(doughnutChart, {
       type: 'doughnut',
@@ -239,7 +262,9 @@ export class ChartJsComponent implements OnInit {
       },
       options: this.optionsForFalseScales
     });
+  }
 
+  private pieChartInitializer(): void {
     const pieChart = document.getElementById('pieChart');
     this.pieChart = new Chart(pieChart, {
       type: 'pie',
