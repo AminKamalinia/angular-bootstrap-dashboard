@@ -80,18 +80,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-bootstrap-dashboard:build"
+            "buildTarget": "angular-bootstrap-dashboard:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-bootstrap-dashboard:build:production"
+              "buildTarget": "angular-bootstrap-dashboard:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-bootstrap-dashboard:build"
+            "buildTarget": "angular-bootstrap-dashboard:build"
           }
         },
         "test": {
