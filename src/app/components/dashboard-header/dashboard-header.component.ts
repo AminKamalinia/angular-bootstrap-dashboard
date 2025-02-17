@@ -1,9 +1,10 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
-  selector: 'app-dashboard-header',
-  templateUrl: './dashboard-header.component.html',
-  styleUrls: ['./dashboard-header.component.scss']
+    selector: 'app-dashboard-header',
+    templateUrl: './dashboard-header.component.html',
+    styleUrls: ['./dashboard-header.component.scss'],
+    standalone: false
 })
 export class DashboardHeaderComponent implements OnInit {
 

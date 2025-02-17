@@ -3,9 +3,10 @@ import { Component, AfterViewInit } from '@angular/core';
 declare var $: any;
 
 @Component({
-  selector: 'app-owl-carousel',
-  templateUrl: './owl-carousel.component.html',
-  styleUrls: ['./owl-carousel.component.scss']
+    selector: 'app-owl-carousel',
+    templateUrl: './owl-carousel.component.html',
+    styleUrls: ['./owl-carousel.component.scss'],
+    standalone: false
 })
 export class OwlCarouselComponent implements AfterViewInit {
 

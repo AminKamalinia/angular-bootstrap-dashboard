@@ -3,9 +3,10 @@ import * as Highcharts from 'highcharts/highcharts.src';
 import highcharts3D from 'highcharts/highcharts-3d.src';
 
 @Component({
-  selector: 'app-highcharts',
-  templateUrl: './highcharts.component.html',
-  styleUrls: ['./highcharts.component.scss']
+    selector: 'app-highcharts',
+    templateUrl: './highcharts.component.html',
+    styleUrls: ['./highcharts.component.scss'],
+    standalone: false
 })
 export class HighchartsComponent implements OnInit {
   constructor() {

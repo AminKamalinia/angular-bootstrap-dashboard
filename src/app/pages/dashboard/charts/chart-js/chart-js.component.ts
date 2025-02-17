@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { Chart } from 'chart.js';
 
 @Component({
-  selector: 'app-chart-js',
-  templateUrl: './chart-js.component.html',
-  styleUrls: ['./chart-js.component.scss']
+    selector: 'app-chart-js',
+    templateUrl: './chart-js.component.html',
+    styleUrls: ['./chart-js.component.scss'],
+    standalone: false
 })
 export class ChartJsComponent implements OnInit {
 

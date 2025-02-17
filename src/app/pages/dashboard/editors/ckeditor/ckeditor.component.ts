@@ -3,9 +3,10 @@ import { Component, OnInit } from '@angular/core';
 import * as DecoupledEditor from '@ckeditor/ckeditor5-build-decoupled-document';
 
 @Component({
-  selector: 'app-ckeditor',
-  templateUrl: './ckeditor.component.html',
-  styleUrls: ['./ckeditor.component.scss']
+    selector: 'app-ckeditor',
+    templateUrl: './ckeditor.component.html',
+    styleUrls: ['./ckeditor.component.scss'],
+    standalone: false
 })
 export class CkeditorComponent implements OnInit {
 

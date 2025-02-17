@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-tinymce',
-  templateUrl: './tinymce.component.html',
-  styleUrls: ['./tinymce.component.scss']
+    selector: 'app-tinymce',
+    templateUrl: './tinymce.component.html',
+    styleUrls: ['./tinymce.component.scss'],
+    standalone: false
 })
 export class TinymceComponent implements OnInit {
 

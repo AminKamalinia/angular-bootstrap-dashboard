@@ -4,9 +4,10 @@ import { ActivatedRoute, Router } from '@angular/router';
 declare var $: any;
 
 @Component({
-  selector: 'app-dashboard-sidebar',
-  templateUrl: './dashboard-sidebar.component.html',
-  styleUrls: ['./dashboard-sidebar.component.scss']
+    selector: 'app-dashboard-sidebar',
+    templateUrl: './dashboard-sidebar.component.html',
+    styleUrls: ['./dashboard-sidebar.component.scss'],
+    standalone: false
 })
 export class DashboardSidebarComponent implements OnInit {
 

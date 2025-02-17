@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { LogoCarouselInput } from 'src/app/models';
 
 @Component({
-  selector: 'app-bootstrap-carousel',
-  templateUrl: './bootstrap-carousel.component.html',
-  styleUrls: ['./bootstrap-carousel.component.scss']
+    selector: 'app-bootstrap-carousel',
+    templateUrl: './bootstrap-carousel.component.html',
+    styleUrls: ['./bootstrap-carousel.component.scss'],
+    standalone: false
 })
 export class BootstrapCarouselComponent implements OnInit {
 
